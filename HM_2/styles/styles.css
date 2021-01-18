@@ -1,0 +1,88 @@
+body {
+    background-image: url('../assets/background.gif');;
+}
+
+.menu {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    /*z-index: 1; !* Stay on top *!*/
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+
+.menu a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: flex;
+}
+
+/* When you mouse over the navigation links, change their color */
+.menu a:hover {
+    color: #f1f1f1;
+}
+
+.menu a{
+    text-decoration: none;
+    font-family: 'segoe print', serif;
+    font-size: 120%;
+}
+
+.title {
+    margin-left: 160px;
+    font-family: 'segoe print', serif;
+}
+
+.main {
+    margin-left: 160px;
+    padding: 0 10px;
+}
+
+.textMain{
+    text-decoration: none;
+    font-family: 'segoe print', serif;
+}
+
+.users {
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+}
+
+.imgUser2 {
+    position: absolute;
+    margin-left: 160px;
+    margin-top: -40px;
+    overflow: hidden;
+}
+.imgUser1 {
+    position: absolute;
+    margin-left: -30px;
+    margin-top: -40px;
+    overflow: hidden;
+}
+
+.user1 {
+    width: 200px;
+    margin: 35px 50px 0 20px;
+    background-color: #818181;
+}
+
+.user2 {
+    width: 200px;
+    margin: 35px 20px 0 10px;
+    background-color: #818181;
+}
+
+.text {
+    text-align: center;
+    padding-right: 27px;
+    padding-left: 27px;
+    text-decoration: none;
+    font-family: 'segoe print', serif;
+}
