@@ -75,12 +75,16 @@ body {
 
 .logoContent {
     background-image: url('../assets/background.png');
-    background-repeat: repeat;
+
+    max-width: 1470px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px;
+    width: 100%;
     background-size: cover;
-    height: 80vh;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 @media screen and (max-width: 580px) and (min-width: 375px) {
@@ -341,5 +345,32 @@ input[type=button] {
 @media screen and (max-width: 580px) and (min-width: 375px) {
     .footer {
         height: 100px;
+    }
+}
+
+.buttonUp {
+    position: fixed;
+    right: 45px;
+    bottom: 45px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    background-color: dimgray;
+    opacity: 0.7;
+    font-family: 'Lato', sans-serif;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 580px) and (min-width: 375px) {
+    .buttonUp {
+        right: 3px;
+        bottom: 15px;
+        height: 40px;
+        width: 40px;
+        font-size: 12px;
     }
 }
