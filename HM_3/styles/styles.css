@@ -73,9 +73,8 @@ body {
     }
 }
 
-.logoContent {
+.logo-Content {
     background-image: url('../assets/background.png');
-
     max-width: 1470px;
     margin-left: auto;
     margin-right: auto;
@@ -88,16 +87,16 @@ body {
 }
 
 @media screen and (max-width: 580px) and (min-width: 375px) {
-    .logoContent {
+    .logo-Content {
         height: 50vh;
     }
 }
 
-.logoContent p{
+.logo-Content p{
     font-size: 32px;
 }
 
-.frameLogo {
+.frame-Logo {
     border-style: solid;
     border-width: 2px;
     height: 40px;
@@ -115,12 +114,12 @@ body {
 }
 
 @media screen and (max-width: 580px) and (min-width: 375px) {
-    .frameLogo {
+    .frame-Logo {
         font-size: 20px;
         height: 30px;
         width: 45px;
     }
-    .logoContent p {
+    .logo-Content p {
         font-size: 20px;
     }
     .title {
@@ -128,149 +127,74 @@ body {
     }
 }
 
-.projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.proiect {
+.row-project {
+    padding-left: 10px;
+    padding-right: 10px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.proiect div:hover {
-    transform: scale(1.05);
+.project {
+    padding: 5px;
+    flex-basis: 25%;
+    box-sizing: border-box;
+    position: relative;
 }
 
-.proiect1 {
-    height: 250px;
-    width: 400px;
-    background-image: url('../assets/house2.jpg');
-    background-size: 100%;
-    display: flex;
-    margin: 0 15px 15px 0;
-}
-.proiect2 {
-    height: 250px;
-    width: 400px;
-    background-image: url('../assets/house3.jpg');
-    background-size: 100%;
-    display: flex;
-    margin: 0 15px 15px 0;
-}
-.proiect3 {
-    height: 250px;
-    width: 400px;
-    background-image: url('../assets/house4.jpg');
-    background-size: 100%;
-    display: flex;
-    margin: 0 15px 15px 0;
-}
-.proiect4 {
-    height: 250px;
-    width: 400px;
-    background-image: url('../assets/house5.jpg');
-    background-size: 100%;
-    display: flex;
-    margin: 0 15px 15px 0;
-}
-.proiect5 {
-    height: 250px;
-    width: 400px;
-    background-image: url('../assets/house3.jpg');
-    background-size: 100%;
-    display: flex;
-    margin: 0 15px 15px 0;
-}
-.proiect6 {
-    height: 250px;
-    width: 400px;
-    background-image: url('../assets/house2.jpg');
-    background-size: 100%;
-    display: flex;
-    margin: 0 15px 15px 0;
-}
-.proiect7 {
-    height: 250px;
-    width: 400px;
-    background-image: url('../assets/house5.jpg');
-    background-size: 100%;
-    display: flex;
-    margin: 0 15px 15px 0;
-}
-.proiect8 {
-    height: 250px;
-    width: 400px;
-    background-image: url('../assets/house2.jpg');
-    background-size: 100%;
-    display: flex;
-    margin: 0 15px 15px 0;
+.projects  img {
+    filter: grayscale(30%);
+    cursor: pointer;
 }
 
-@media screen and (max-width: 580px) and (min-width: 375px) {
-    .proiect1 {
-        height: 200px;
-        width: 275px;
-    }
-    .proiect2 {
-        height: 200px;
-        width: 275px;
-    }
-    .proiect3 {
-        height: 200px;
-        width: 275px;
-    }
-    .proiect4 {
-        height: 200px;
-        width: 275px;
-    }
-    .proiect5 {
-        height: 200px;
-        width: 275px;
-    }
-    .proiect6 {
-        height: 200px;
-        width: 275px;
-    }
-    .proiect7 {
-        height: 200px;
-        width: 275px;
-    }
-    .proiect8 {
-        height: 200px;
-        width: 275px;
+.projects  .project {
+    transition: transform 1s;
+}
+
+
+.projects .project:hover {
+    transform: scale(1.04);
+    filter: saturate(200%);
+    z-index: 1;
+}
+
+.project img {
+    width: 100%;
+}
+
+
+@media (max-width: 1024px) {
+    .project {
+        flex-basis: 50%;
     }
 }
 
-.textProject {
+@media (max-width: 375px) {
+    .project {
+        flex-basis: 100%;
+    }
+}
+
+.text-Project {
+    position: absolute;
     background-color: black;
     color: aliceblue;
-    position: absolute;
-    display: block;
     text-align: center;
-    width: 220px;
-    height: 30px;
+    padding: 4% 0;
+    font-size: 16px;
+    width: 70%;
+    z-index: 1;
 }
 
-.textAbout {
+.text-About {
     font-size: 15px;
 }
 
-.aboutTeam {
+.about-Team {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
 
-.aboutTeam div{
-    height: 500px;
-    width: 420px;
-}
-
-.aboutTeam img {
-    width: 100%;
 }
 
 .name {
@@ -286,15 +210,6 @@ body {
     color: darkgray;
 }
 
-@media screen and (max-width: 580px) and (min-width: 375px) {
-    .name {
-        font-size: 25px;
-    }
-    .position {
-        font-size: 15px;
-    }
-}
-
 .contact {
     display: flex;
     justify-content: center;
@@ -305,11 +220,6 @@ body {
     height: 30px;
 }
 
-@media screen and (max-width: 580px) and (min-width: 375px) {
-    .contact {
-        font-size: 12px;
-    }
-}
 
 input[type=text] {
     width: 100%;
@@ -348,7 +258,7 @@ input[type=button] {
     }
 }
 
-.buttonUp {
+.button-Up {
     position: fixed;
     right: 45px;
     bottom: 45px;
@@ -366,7 +276,7 @@ input[type=button] {
 }
 
 @media screen and (max-width: 580px) and (min-width: 375px) {
-    .buttonUp {
+    .button-Up {
         right: 3px;
         bottom: 15px;
         height: 40px;
