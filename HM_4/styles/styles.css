@@ -1,0 +1,61 @@
+
+.body-max {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.name-table {
+    text-align: center;
+}
+
+.div-table {
+    overflow: scroll;
+    text-align: center;
+}
+
+.main-table {
+    width: 1000px;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.main-table, td, th {
+    border: 1px solid black;
+}
+
+td, th {
+    padding: 10px;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+td {
+    height: 40px;
+}
+
+th {
+    height: 150px;
+    writing-mode: vertical-rl;
+    overflow: hidden;
+    /*transform: scale(-1);*/
+}
+
+th p {
+    display: inline-block;
+}
+
+.hide-left-border {
+    position: relative;
+    overflow: unset;
+}
+
+.hide-left-border:before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    bottom: 0;
+    left: -1px;
+    background: white;
+    z-index: 1;
+}
