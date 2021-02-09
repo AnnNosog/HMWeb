@@ -1,0 +1,365 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Georgia";
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    user-select: none;
+    background: url('../assets/bg (5).jpg') no-repeat;
+    background-size: cover;
+}
+
+.max-wigth {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+header {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    align-items: center;
+    height: 85px;
+    border-top: 2px solid rgb(118, 195, 143);
+    background-color: dimgray;
+    opacity: 0.7;
+}
+
+.logo a {
+    font-size: 28px;
+    color: rgb(255, 255, 255);
+    line-height: 1;
+    text-decoration: none;
+}
+
+.logo p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.under-logo {
+    font-size: 11px;
+    color: rgb(151, 151, 151);
+    line-height: 1;
+}
+
+.body-max {
+    max-width: 100%;
+    margin-left: auto;
+}
+
+.navigation-bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    font-size: 13px;
+    line-height: 1.2;
+}
+
+@media (max-width: 450px) {
+    .navigation-list {
+        display: none;
+    }
+}
+
+.navigation-bar a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px 10px 20px;
+    border-radius: 15px;
+}
+
+.navigation-bar a:hover {
+    background-color: rgb(118, 195, 143);
+}
+
+.slider {
+    height: 520px;
+    background-color: dimgray;
+    opacity: 0.7;
+    /*padding: 0 10% 0 10%;*/
+}
+
+.my-slider {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.my-slider div{
+    padding-right: 10%;
+    flex-basis: 40%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.text-slider {
+    margin-top: 3%;
+}
+
+.title-text-slider {
+    font-size: 46px;
+    margin-bottom: 0;
+}
+
+.main-text-slider {
+    font-size: 15px;
+    color: rgb(151, 151, 151);
+}
+
+.text-slider p{
+    justify-content: center;
+    align-items: center;
+}
+
+.img-slider {
+    width: 380px;
+    height: 380px;
+}
+
+.img-slider img{
+    min-width: auto;
+    min-height: auto;
+    height: 100%;
+    border: 25px solid rgb(51, 51, 51);
+    border-radius: 210px;
+}
+
+.button-read {
+    background-color: rgb(118, 195, 143);
+    border-radius: 10px;
+    border-style: none;
+    text-align: center;
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    height: 35px;
+    width: 145px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 55%;
+    width: auto;
+    margin-top: -200px;
+    padding: 16px;
+    color: rgb(118, 195, 143);
+    font-weight: bold;
+    font-size: 50px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 15%;
+    border-radius: 3px 0 0 3px;
+}
+
+
+.row-services {
+    display: flex;
+    /*justify-content: center;*/
+    margin-left: -8px;
+    flex-wrap: wrap;
+}
+
+.services img{
+    height: 120px;
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service {
+    width: 25%;
+    flex-basis: 25%;
+    box-sizing: border-box;
+    position: relative;
+    background-color: ghostwhite;
+    text-align: center;
+    padding: 5px 10px;
+    margin-left: 8px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+
+.title-service {
+    font-size: 32px;
+    margin: 0;
+    color: dimgray;
+}
+
+.main-text-service {
+    color: rgb(151, 151, 151);
+}
+
+.row-services div:hover {
+    background-color: rgb(118, 195, 143);
+}
+
+.service:hover p{
+    color: ghostwhite;
+}
+
+.service:hover img{
+    filter: invert(100%);
+}
+
+/**/
+
+.title-latest-work {
+    overflow: hidden;
+    text-align: center;
+}
+
+
+.title-latest-work a {
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 24px;
+}
+.title-latest-work:before,
+.title-latest-work:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 4px;
+    background-color: #2a2a2a;
+    position: relative;
+}
+.title-latest-work:before {
+    margin-left: -100%;
+}
+
+.title-latest-work:after {
+    margin-right: -100%;
+}
+
+.row-latest-work {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.latest {
+    margin: 20px;
+    /*flex-basis: 20%;*/
+    box-sizing: border-box;
+    position: relative;
+    border: 5px solid rgb(255, 255, 255);
+    height: 200px;
+    width: 300px;
+}
+
+.latest img {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+}
+
+.latest-description{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 2% 0;
+    font-size: 14px;
+    width: 100%;
+    bottom: 0;
+}
+
+.latest:hover{
+    border-color: rgb(118, 195, 143);
+}
+
+.latest:hover img{
+    filter: grayscale(0%);
+}
+
+.latest:hover div{
+    display: none;
+}
+
+.about-us {
+    /*padding: 30px 200px 0 200px;*/
+    background-color: #313131;
+    height: 400px;
+}
+
+.row-about-us {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about {
+    box-sizing: border-box;
+    position: relative;
+    flex-basis: 25%;
+    padding: 0 50px 0 0;
+}
+
+
+/*/*/
+
+input[type=text], select, textarea {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    /*margin-top: 6px;*/
+    margin-bottom: 10px;
+    resize: vertical;
+    border-radius: 15px;
+    background-color: #222222;
+}
+
+input[type=submit] {
+    background-color: rgb(118, 195, 143);
+    color: rgb(151, 151, 151);
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+
+.footer {
+    background-color: #2b2b2b;
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+}
+
