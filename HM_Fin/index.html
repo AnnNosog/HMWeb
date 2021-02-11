@@ -7,7 +7,6 @@
 </head>
 <body>
 
-
 <header>
 
     <div class="logo">
@@ -20,22 +19,30 @@
     <div class="navigation-bar body-max">
     <nav>
         <ul class="navigation-list">
-            <li><a href="#projects">HOME</a></li>
-            <li><a href="#about">STYLE DEMO</a></li>
-            <li><a href="#team">FULL WIDTH</a></li>
-            <li><a href="#dropdown">DROPDOWN</a></li>
-            <li><a href="#portfolio">PORTFOLIO</a></li>
-            <li><a href="#gallery">GALLERY</a></li>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#service">SERVICE</a></li>
+            <li><a href="#works">WORKS</a></li>
+            <li><a href="#contacts">ABOUT US</a></li>
         </ul>
     </nav>
     </div>
 
+    <div class="navig-mini">
+        <li><a href="#" class="down">Menu</a>
+            <ul class="submenu">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#service">SERVICE</a></li>
+                <li><a href="#works">WORKS</a></li>
+                <li><a href="#contacts">ABOUT US</a></li>
+            </ul>
+    </div>
+
 </header>
 <main>
-    <section class="slider max-wigth">
-
+    <div class="slider max-wigth">
         <div class="my-slider">
             <div class="text-slider">
+                <div class="decription-slider">
                 <p class="title-text-slider">
                     Cursus penati  saccum nulla.
                 </p>
@@ -48,22 +55,22 @@
                 </p>
 
                 <button class="button-read">
-                    Read More Here >>
+                    <a href="https://www.onliner.by"> Read More Here >></a>
                 </button>
-            </div>
 
-            <div class="img-slider">
-                <img src="assets/cat.jpg" alt="">
             </div>
         </div>
 
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="text-slider">
+                <div class="round">
+                <img class="img-slider" src="assets/cat.jpg" alt="">
+            </div>
+            </div>
+        </div>
 
+    </div>
 
-    </section>
-
-    <section class="services max-wigth">
+    <section class="services max-wigth" id="service">
         <div class="row-services">
             <div class="service">
                 <img src="assets/hg.png" alt="">
@@ -96,53 +103,52 @@
         </div>
     </section>
 
-    <section class="latest-work max-wigth">
+    <section class="latest-work max-wigth" id="works">
 
-        <div class="title-latest-work "><a>LATEST WORK</a></div>
+        <div class="title-latest-work"><a>LATEST WORK</a></div>
 
         <div class="row-latest-work">
             <div class="latest">
                 <img src="assets/learn.jpg" alt="">
-                <div class="latest-description">IPSUM DOLOR</div>
+                <div class="latest-description"><p>IPSUM DOLOR</p></div>
+
             </div>
 
             <div class="latest">
                 <img src="assets/car.jpg" alt="">
-                <div class="latest-description">IPSUM DOLOR</div>
+                <div class="latest-description"><p>IPSUM DOLOR</p></div>
             </div>
 
             <div class="latest">
                 <img src="assets/architect.jpg" alt="">
-                <div class="latest-description">IPSUM DOLOR</div>
+                <div class="latest-description"><p>IPSUM DOLOR</p></div>
             </div>
-        </div>
 
-        <div class="row-latest-work">
             <div class="latest">
                 <img src="assets/gitar.jpg" alt="">
-                <div class="latest-description">IPSUM DOLOR</div>
+                <div class="latest-description"><p>IPSUM DOLOR</p></div>
             </div>
 
             <div class="latest">
                 <img src="assets/flamingo.jpg" alt="">
-                <div class="latest-description">IPSUM DOLOR</div>
+                <div class="latest-description"><p>IPSUM DOLOR</p></div>
             </div>
 
             <div class="latest">
                 <img src="assets/waterfall.jpg" alt="">
-                <div class="latest-description">IPSUM DOLOR</div>
+                <div class="latest-description"><p>IPSUM DOLOR</p></div>
             </div>
         </div>
 
     </section>
 
-    <section class="about-us max-wigth">
+    <section class="about-us max-wigth" id="contacts">
         <div class="row-about-us">
             <div class="about">
                 <p class="title-about">From The Blog</p>
-                <p class="about-p">Post Title</p>
+                <p class="about-p" href="#home">Post Title</p>
                 <p class="text-admin">
-                    <a class="green-text">Admin, </a>donainname.com
+                    <a class="green-text" href="#home">Admin</a>, donainname.com
                 </p>
                 <p class="text-admin">Friday, 6th April 2000</p>
                 <p class="text-blog">Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean
@@ -150,34 +156,34 @@
                     ac aliquat non tincidunt. Namjusto cras urna urnaretra
                     lor urna neque sed quis orci nulla.
                 </p>
-                <button class="button-read">
-                    Read More Here >>
+                <button class="button-read-about" >
+                    <a href="https://www.onliner.by"> Read More >></a>
                 </button>
 
             </div>
 
             <div class="about">
                 <p class="title-about">Quick Links</p>
-                <ul>
-                    <li>Lorem ipsum dolor sit</li>
-                    <li>Amet consectetur </li>
-                    <li>Praesent vel sem id </li>
-                    <li>Curabitur hendrerit est </li>
-                    <li>Aliquam eget erat nec sapien </li>
-                    <li>Cras id auque nunc </li>
-                    <li>Sed a nulla urna </li>
+                <ul class="list-quick">
+                    <li><a href="#home">Lorem ipsum dolor sit</a></li>
+                    <li><a href="#home">Amet consectetur</a></li>
+                    <li><a href="#home">Praesent vel sem</a></li>
+                    <li><a href="#home">Curabitur hendrerit est</a></li>
+                    <li><a href="#home">Aliquam eget erat nec sapien</a></li>
+                    <li><a href="#home">Cras id auque nunc</a></li>
+                    <li><a href="#home">Sed a nulla urna</a></li>
                 </ul>
             </div>
 
             <div class="about">
                 <p class="title-about">Latest Tweets</p>
-                <p>
-                    @namehere Justoid nonummy laoreet phasellent penatoque in antesque
+                <p class="text-blog">
+                    <a class="green-text" href="#home">@namehere</a> Justoid nonummy laoreet phasellent penatoque in antesque
                     pellus elis eget tincidunt. Nequatdui laorem justo a non tellus laoremut
                     vitae doloreet 1 day ago
                 </p>
-                <p>
-                    @namehere Justoid nonummy laoreet phasellent penatoque in antesque
+                <p class="text-blog">
+                    <a class="green-text" href="#home">@namehere</a> Justoid nonummy laoreet phasellent penatoque in antesque
                     pellus elis eget tincidunt. Nequatdui laorem justo a non tellus laoremut
                     vitae doloreet 1 day ago
                 </p>
@@ -190,7 +196,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="column">
-                            <form action="/action_page.php">
+                            <form >
 
                                 <input type="text" id="fname" name="firstname" placeholder="Full Mame">
                                 <input type="text" id="mail" name="email" placeholder="Email Address">
@@ -209,7 +215,7 @@
 
     <footer class="footer max-wigth">
         <div class="copyright">Copyright © 2013 Domain Name - All Rights Reserved</div>
-        <div>Template by OS Templates</div>
+        <div class="template">Template by OS Templates</div>
     </footer>
 
 </main>
